@@ -1,10 +1,8 @@
 :root {
-  --Very-Dark-Blue-Dark-Mode-Background: hsl(207, 26%, 17%);
-  --Very-Dark-Blue-Light-Mode-Text: hsl(200, 15%, 8%);
-  --Dark-Gray-Light-Mode-Input: hsl(0, 0%, 52%);
-  --Very-Light-Gray-Light-Mode-Background: hsl(0, 0%, 98%);
-  --White-Dark-Mode-Text-Light-Mode-Elements: hsl(0, 0%, 100%);
-  --Dark-Blue-Dark-Mode-Elements: hsl(209, 23%, 22%);
+  --bgcolor:hsl(0, 0%, 98%);
+  --elementcolor: hsl(0, 0%, 100%);
+  --textcolor:hsl(200, 15%, 8%);
+  --shadowcolor:#dfdede;
   --font-weight-light: 300;
   --font-weight-medium: 600;
   --font-weight-hard: 800;
@@ -25,17 +23,20 @@
 }
 
 .darkmode{
-  background-color: var(--Dark-Blue-Dark-Mode-Elements);
+  --bgcolor:hsl(207, 26%, 17%);
+  --elementcolor: hsl(209, 23%, 22%);
+  --textcolor:hsl(0, 0%, 100%);
+  --shadowcolor:#0e0e0e;
   
 }
 button {
   border: none;
-  background-color: var(--White-Dark-Mode-Text-Light-Mode-Elements);
+  background-color: var(--elementcolor);
   cursor: pointer;
 }
 body {
   font-family: "Nunito Sans", sans-serif;
-  background-color: var(--Very-Light-Gray-Light-Mode-Background);
+  background-color: var(--bgcolor);
 }
 img {
   width: 100%;
@@ -45,7 +46,7 @@ img {
 /* ########### detail page ########## */
 .return-btn,
 .country-btn {
-  background-color: var(--White-Dark-Mode-Text-Light-Mode-Elements);
+  background-color: var(--elementcolor);
   width: 7rem;
   height: 2rem;
   display: flex;
@@ -80,11 +81,13 @@ img {
 .details-page {
   padding: 0 5vw;
   padding-bottom: 5rem;
+  color: var(--textcolor);
 }
 .detail-name,
 .detail-capital,
 .languages {
   margin-bottom: 3rem;
+
 }
 .native-name,
 .detail-pop,
