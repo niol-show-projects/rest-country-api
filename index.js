@@ -14,6 +14,38 @@ const codeURL = `https://restcountries.com/v3.1/alpha/`
 
 let loader = `<div class='gif-parent'></div>`
 
+let darkMode = localStorage.getItem('darkMode');
+
+const darkModeToggle = document.querySelector('#dark-mode-toggle');
+const text = document.getElementById('dark-mode-text');
+
+const enableDarkMode = () =>{
+    document.body.classList.add('darkmode')
+    localStorage.setItem('darkMode', 'enabled')
+    darkModeToggle.src = '/moon-fill-white.svg'
+    text.innerText = 'Dark Mode'
+}
+
+const disableDarkMode = () =>{
+    document.body.classList.remove('darkmode')
+    localStorage.setItem('darkMode', 'null')
+    darkModeToggle.src= '/moon.svg'
+    text.innerText = 'Light Mode'
+}
+if (darkMode === 'enabled'){
+    enableDarkMode();
+}
+darkModeToggle.addEventListener('click', ()=>{
+    darkMode = localStorage.getItem('darkMode')
+    //alert('clicked')
+    if(darkMode !== 'enabled'){
+        enableDarkMode();
+        //alert('darkmode')
+    }else{
+        disableDarkMode();
+    }
+})
+
 const showLoader = () => {
   parentElement.innerHTML = loader
 }
