@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./home.css" />
     <link
       rel="icon"
       type="image/png"
@@ -21,9 +21,10 @@
       src="https://kit.fontawesome.com/e6991a531e.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./index.js" defer></script>
     <title>where in the world?</title>
   </head>
-  <body>
+  <body id="index">
     <!-- header -->
     <header role="heading">
       <h1>where in the world?</h1>
@@ -39,34 +40,58 @@
     <main role="main">
       <div class="controls">
         <!-- input -->
-        <div class="input-parent">
+        <form class="form" role="form">
           <!-- span for the icon -->
-          <span> <i class="fa-solid fa-magnifying-glass"></i></span>
+          <span aria-hidden="true">
+            <i class="fa-solid fa-magnifying-glass"></i
+          ></span>
           <input
+            id="input"
             type="text"
             aria-placeholder="search for a country"
-            placeholder="search for a country..."
+            placeholder="Search for a country..."
             role="form"
+            autofocus
+            value
           />
-        </div>
+        </form>
         <!-- dropdown menu -->
         <div class="dropdown">
           <!-- span for the icon -->
-          <button class="btn" role="button">
-            filter by region
-            <span><i class="fa-solid fa-chevron-down"></i></span>
-          </button>
-          <div id="myDropdown" class="dropdown-content" role="menu">
-            <a href="#" role="menuitem">africa</a>
-            <a href="#" role="menuitem">america</a>
-            <a href="#" role="menuitem">asia</a>
-            <a href="#" role="menuitem">europe</a>
-            <a href="#" role="menuitem">oceania</a>
+          <span class="filter"
+            ><button class="btn" role="button" id="filter-btn">
+              Filter by Region
+            </button>
+            <span aria-hidden="true"
+              ><i
+                class="fa-solid fa-chevron-down fa-2xs fa-rotate-180"
+              ></i></span
+          ></span>
+          <div
+            id="myDropdown"
+            class="dropdown-content hide-dropdown"
+            role="menu"
+          >
+            <a href="#" role="menuitem" class="region">africa</a>
+            <a href="#" role="menuitem" class="region">america</a>
+            <a href="#" role="menuitem" class="region">asia</a>
+            <a href="#" role="menuitem" class="region">europe</a>
+            <a href="#" role="menuitem" class="region">oceania</a>
           </div>
         </div>
       </div>
-      <!-- add content dynamically -->
-      <section class="main-content"></section>
+      <section class="main-content">
+        <!--  add content dynamically -->
+      </section>
     </main>
+    <!-- <section class="details-page">
+      <button class="return-btn btn" role="button">
+        <i class="fa-solid fa-arrow-left"></i>
+        back
+      </button>
+      <section role="main" class="detail">
+        content added dynamically
+      </section>
+    </section> -->
   </body>
 </html>
