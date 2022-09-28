@@ -70,7 +70,6 @@ button {
 body {
   font-family: "Nunito Sans", sans-serif;
   background-color: var(--bgcolor);
-  overflow: hidden;
 }
 img {
   width: 100%;
@@ -85,10 +84,11 @@ img {
   /* grid-auto-rows: 15em; */
   margin-top: 3em;
   padding-bottom: 5em;
+  color: var(--textcolor);
 }
 .gif-parent {
   background-image: url(./Infinity.gif);
-  background-color: var(--elementcolor);
+  background-color: var(--bgcolor);
   background-blend-mode: multiply;
   width: 100vw;
   height: 50vh;
@@ -261,13 +261,14 @@ form {
   h1{
     padding-left: 40px;
     font-size: 15px;
+    padding-top: 10px;
   }
   header{
       margin-top: -8px;
       height: 70px;
       margin-left: -25px;
       margin-right: -8px;
-      overflow: hidden;
+    
   }
   .theme{
       cursor: pointer;
@@ -337,5 +338,35 @@ form {
   }
   .padding {
     padding-top: 4rem;
+  }
+}
+
+@media screen  and (max-width:375px){
+  .header{
+    padding-left: 0px;
+    font-size: 20px;
+
+}
+  header{
+      margin-top: 0px;
+      height: 80px;
+      margin-left: 0px;
+      margin-right: -8px;
+      overflow: hidden;
+  }
+  .theme{
+      cursor: pointer;
+      margin-right: -20px;
+      
+  }
+
+  #dark-mode-text{
+      font-weight: 600;
+      padding-right: 40px;
+      font-size: 12px;
+  }
+  img{
+      padding-right: 10px;
+      width: 12px;
   }
 }
