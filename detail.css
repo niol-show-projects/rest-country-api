@@ -30,9 +30,10 @@
   
 }
 
-.header{
+.heading{
   padding-left: 50px;
   color: var(--textcolor);
+  font-size: 30px;
   
 }
 header{
