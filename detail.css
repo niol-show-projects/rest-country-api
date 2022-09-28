@@ -65,8 +65,14 @@ header{
   width: 30px;
  
 }
+.fa-solid{
+  color: var(--textcolor);
+}
+
+
 button {
   border: none;
+  color: var(--textcolor);
   background-color: var(--elementcolor);
   cursor: pointer;
 }
