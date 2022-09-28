@@ -27,10 +27,10 @@
   --textcolor:hsl(0, 0%, 100%);
   --shadowcolor:#0e0e0e;
 }
-h1{
+.header{
   padding-left: 50px;
   color: var(--textcolor);
-  
+  font-size: 30px;
 }
 header{
   display: flex;
@@ -51,14 +51,15 @@ header{
   cursor: pointer;
 }
 
-.theme p{
+#dark-mode-text{
   font-weight: 600;
   padding-right: 40px;
   color: var(--textcolor);
+  font-size: var(--font-size-home);
 }
-.headerImg{
+#dark-mode-toggle{
   padding-right: 10px;
-  width: 30px;
+  width: 25px;
  
 }
 button {
