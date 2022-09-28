@@ -16,6 +16,7 @@ let loader = `<div class='gif-parent'></div>`
 
 let darkMode = localStorage.getItem('darkMode');
 
+const toggleIcon = document.querySelector('#toggle-icon')
 const darkModeToggle = document.querySelector('#dark-mode-toggle');
 const text = document.getElementById('dark-mode-text');
 
@@ -35,7 +36,7 @@ const disableDarkMode = () =>{
 if (darkMode === 'enabled'){
     enableDarkMode();
 }
-darkModeToggle.addEventListener('click', ()=>{
+toggleIcon.addEventListener('click', ()=>{
     darkMode = localStorage.getItem('darkMode')
     //alert('clicked')
     if(darkMode !== 'enabled'){
