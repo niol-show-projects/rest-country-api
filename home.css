@@ -337,7 +337,7 @@ form {
   }
   .gif-parent {
     background-image: url(./Infinity.gif);
-    background-color: var(--elementcolor);
+    background-color: var(--bgcolor);
     background-blend-mode: multiply;
     width: calc(100vw - 6rem);
     height: 50vw;
@@ -346,10 +346,11 @@ form {
   }
 }
 
-@media screen  and (max-width:375px){
+@media screen  and (max-width:385px){
   .heading{
     padding-left: 10px;
-    font-size: 20px;
+    padding-right: 20px;
+    font-size: 1.3rem;
 
 }
   header{
