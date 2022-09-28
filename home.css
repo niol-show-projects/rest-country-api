@@ -27,42 +27,7 @@
   --textcolor:hsl(0, 0%, 100%);
   --shadowcolor:#0e0e0e;
 }
-.heading{
-  padding-left: 50px;
-  color: var(--textcolor);
-  font-size: 30px;
-}
-header{
-  display: flex;
-  position: sticky;
-  margin-top: 0px;
-  height: 80px;
-  background-color: var(--elementcolor);
-  padding: 10px;
-  margin-left: -30px;
-  margin-right: -10px;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 10px 10px 10px -5px var(--shadowcolor);
-  overflow: hidden;
-}
-.theme{
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
 
-#dark-mode-text{
-  font-weight: 600;
-  padding-right: 40px;
-  color: var(--textcolor);
-  font-size: var(--font-size-home);
-}
-#dark-mode-toggle{
-  padding-right: 10px;
-  width: 25px;
- 
-}
 button {
   border: none;
   background-color: var(--elementcolor);
@@ -259,34 +224,6 @@ form {
 
 @media screen and (min-width: 769px) {
 
-  h1{
-    padding-left: 40px;
-    font-size: 15px;
-    padding-top: 11px;
-  }
-  header{
-      margin-top: -8px;
-      height: 70px;
-      margin-left: -25px;
-      margin-right: -8px;
-      overflow: hidden;
-    
-  }
-  .theme{
-      cursor: pointer;
-      margin-right: -20px;
-      
-  }
-
-  .theme p{
-      font-weight: 600;
-      padding-right: 40px;
-      font-size: 11px;
-  }
-  .headerImg{
-      padding-right: 10px;
-      width: 22px;
-}
 
   .main-content {
     display: grid;
@@ -343,33 +280,3 @@ form {
   }
 }
 
-@media screen  and (max-width:375px){
-  .heading{
-    padding-left: 0px;
-    font-size: 20px;
-
-}
-  header{
-      margin-top: 0px;
-      height: 80px;
-      margin-left: 0px;
-      margin-right: -8px;
-      overflow: hidden;
-  }
-  .theme{
-      cursor: pointer;
-      margin-right: -20px;
-      
-  }
-
-  #dark-mode-text{
-      font-weight: 600;
-      padding-right: 40px;
-      font-size: 12px;
-  }
-  #dark-mode-toggle{
-      padding-right: 10px;
-      width: 19px;
-      height: 19px;
-  }
-}
