@@ -27,7 +27,7 @@
   --textcolor:hsl(0, 0%, 100%);
   --shadowcolor:#0e0e0e;
 }
-.header{
+.heading{
   padding-left: 50px;
   color: var(--textcolor);
   font-size: 30px;
@@ -344,7 +344,7 @@ form {
 }
 
 @media screen  and (max-width:375px){
-  .header{
+  .heading{
     padding-left: 0px;
     font-size: 20px;
 
@@ -369,6 +369,6 @@ form {
   }
   #dark-mode-toggle{
       padding-right: 10px;
-      width: 11px;
+      width: 21px;
   }
 }
