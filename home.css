@@ -44,6 +44,7 @@ header{
   align-items: center;
   justify-content: space-between;
   box-shadow: 10px 10px 10px -5px var(--shadowcolor);
+  overflow: hidden;
 }
 .theme{
   display: flex;
@@ -268,6 +269,7 @@ form {
       height: 70px;
       margin-left: -25px;
       margin-right: -8px;
+      overflow: hidden;
     
   }
   .theme{
