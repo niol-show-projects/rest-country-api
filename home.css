@@ -1,8 +1,8 @@
 :root {
-  --bgcolor:hsl(0, 0%, 98%);
+  --bgcolor: hsl(0, 0%, 98%);
   --elementcolor: hsl(0, 0%, 100%);
-  --textcolor:hsl(200, 15%, 8%);
-  --shadowcolor:#dfdede;
+  --textcolor: hsl(200, 15%, 8%);
+  --shadowcolor: #dfdede;
   --font-weight-light: 300;
   --font-weight-medium: 600;
   --font-weight-hard: 800;
@@ -21,18 +21,18 @@
   display: none;
 }
 
-.darkmode{
-  --bgcolor:hsl(207, 26%, 17%);
+.darkmode {
+  --bgcolor: hsl(207, 26%, 17%);
   --elementcolor: hsl(209, 23%, 22%);
-  --textcolor:hsl(0, 0%, 100%);
-  --shadowcolor:#0e0e0e;
+  --textcolor: hsl(0, 0%, 100%);
+  --shadowcolor: #0e0e0e;
 }
-.header{
+.header {
   padding-left: 50px;
   color: var(--textcolor);
   font-size: 30px;
 }
-header{
+header {
   display: flex;
   position: sticky;
   margin-top: 0px;
@@ -45,22 +45,21 @@ header{
   justify-content: space-between;
   box-shadow: 10px 10px 10px -5px var(--shadowcolor);
 }
-.theme{
+.theme {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
 
-#dark-mode-text{
+#dark-mode-text {
   font-weight: 600;
   padding-right: 40px;
   color: var(--textcolor);
   font-size: var(--font-size-home);
 }
-#dark-mode-toggle{
+#dark-mode-toggle {
   padding-right: 10px;
   width: 25px;
- 
 }
 button {
   border: none;
@@ -121,7 +120,7 @@ input:focus {
   outline: none;
 }
 
-input::placeholder{
+input::placeholder {
   color: var(--textcolor);
 }
 input[type="text"],
@@ -257,33 +256,31 @@ form {
 }
 
 @media screen and (min-width: 769px) {
-
-  h1{
+  h1 {
     padding-left: 40px;
     font-size: 15px;
   }
-  header{
-      margin-top: -8px;
-      height: 70px;
-      margin-left: -25px;
-      margin-right: -8px;
-      overflow: hidden;
+  header {
+    margin-top: -8px;
+    height: 70px;
+    margin-left: -25px;
+    margin-right: -8px;
+    overflow: hidden;
   }
-  .theme{
-      cursor: pointer;
-      margin-right: -20px;
-      
+  .theme {
+    cursor: pointer;
+    margin-right: -20px;
   }
 
-  .theme p{
-      font-weight: 600;
-      padding-right: 40px;
-      font-size: 11px;
+  .theme p {
+    font-weight: 600;
+    padding-right: 40px;
+    font-size: 11px;
   }
-  .headerImg{
-      padding-right: 10px;
-      width: 22px;
-}
+  .headerImg {
+    padding-right: 10px;
+    width: 22px;
+  }
 
   .main-content {
     display: grid;
@@ -297,7 +294,7 @@ form {
   .country {
     width: 17rem;
     margin: 0 auto;
-    
+
     border-radius: 5px;
     padding-bottom: 2.5rem;
   }
@@ -337,5 +334,14 @@ form {
   }
   .padding {
     padding-top: 4rem;
+  }
+  .gif-parent {
+    background-image: url(./Infinity.gif);
+    background-color: var(--elementcolor);
+    background-blend-mode: multiply;
+    width: calc(100vw - 6rem);
+    height: 50vw;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
