@@ -30,7 +30,7 @@
   
 }
 
-.header{
+.heading{
   padding-left: 50px;
   color: var(--textcolor);
   
@@ -68,6 +68,7 @@ button {
   border: none;
   background-color: var(--elementcolor);
   cursor: pointer;
+  color: var(--textcolor);
 }
 body {
   font-family: "Nunito Sans", sans-serif;
@@ -77,6 +78,9 @@ img {
   width: 100%;
   object-fit: fill;
   display: block;
+}
+.fa-solid{
+  color: var(--textcolor);
 }
 /* ########### detail page ########## */
 .return-btn,
@@ -294,5 +298,34 @@ img {
   }
   .detail-content {
     width: clamp(30rem, 40vw, 36rem);
+  }
+}
+@media screen  and (max-width:375px){
+  .heading{
+    padding-left: 10px;
+    font-size: 20px;
+
+}
+  header{
+      margin-top: 0px;
+      height: 80px;
+      margin-left: 0px;
+      margin-right: -8px;
+      overflow: hidden;
+  }
+  .theme{
+      cursor: pointer;
+      margin-right: -20px;
+      
+  }
+
+  #dark-mode-text{
+      font-weight: 600;
+      padding-right: 40px;
+      font-size: 12px;
+  }
+  #dark-mode-toggle{
+      padding-right: 10px;
+      width: 22px;
   }
 }
