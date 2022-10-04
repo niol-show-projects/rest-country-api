@@ -345,3 +345,33 @@ form {
     background-position: center;
   }
 }
+
+@media screen  and (max-width:375px){
+  .heading{
+    padding-left: 0px;
+    font-size: 20px;
+
+}
+  header{
+      margin-top: 0px;
+      height: 80px;
+      margin-left: 0px;
+      margin-right: -8px;
+      overflow: hidden;
+  }
+  .theme{
+      cursor: pointer;
+      margin-right: -20px;
+      
+  }
+
+  #dark-mode-text{
+      font-weight: 600;
+      padding-right: 40px;
+      font-size: 12px;
+  }
+  #dark-mode-toggle{
+      padding-right: 10px;
+      width: 22px;
+  }
+}
