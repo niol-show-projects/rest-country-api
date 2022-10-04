@@ -27,7 +27,7 @@
   --textcolor: hsl(0, 0%, 100%);
   --shadowcolor: #0e0e0e;
 }
-.header {
+.heading {
   padding-left: 50px;
   color: var(--textcolor);
   font-size: 30px;
@@ -69,7 +69,6 @@ button {
 body {
   font-family: "Nunito Sans", sans-serif;
   background-color: var(--bgcolor);
-  overflow: hidden;
 }
 img {
   width: 100%;
@@ -84,10 +83,11 @@ img {
   /* grid-auto-rows: 15em; */
   margin-top: 3em;
   padding-bottom: 5em;
+  color: var(--textcolor);
 }
 .gif-parent {
   background-image: url(./Infinity.gif);
-  background-color: var(--elementcolor);
+  background-color: var(--bgcolor);
   background-blend-mode: multiply;
   width: 100vw;
   height: 50vh;
@@ -258,7 +258,7 @@ form {
 @media screen and (min-width: 769px) {
   h1 {
     padding-left: 40px;
-    font-size: 15px;
+    font-size: 20px;
   }
   header {
     margin-top: -8px;
@@ -348,7 +348,7 @@ form {
 
 @media screen  and (max-width:375px){
   .heading{
-    padding-left: 0px;
+    padding-left: 10px;
     font-size: 20px;
 
 }
