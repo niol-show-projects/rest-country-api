@@ -14,37 +14,37 @@ const codeURL = `https://restcountries.com/v3.1/alpha/`
 
 let loader = `<div class='gif-parent'></div>`
 
-let darkMode = localStorage.getItem('darkMode');
+let darkMode = localStorage.getItem("darkMode")
 
-const toggleIcon = document.querySelector('#toggle-icon')
-const darkModeToggle = document.querySelector('#dark-mode-toggle');
-const text = document.getElementById('dark-mode-text');
+const toggleIcon = document.querySelector("#toggle-icon")
+const darkModeToggle = document.querySelector("#dark-mode-toggle")
+const text = document.getElementById("dark-mode-text")
 
-const enableDarkMode = () =>{
-    document.body.classList.add('darkmode')
-    localStorage.setItem('darkMode', 'enabled')
-    darkModeToggle.src = './moon-fill-white.svg'
-    text.innerText = 'Dark Mode'
+const enableDarkMode = () => {
+  document.body.classList.add("darkmode")
+  localStorage.setItem("darkMode", "enabled")
+  darkModeToggle.src = "./moon-fill-white.svg"
+  text.innerText = "Dark Mode"
 }
 
-const disableDarkMode = () =>{
-    document.body.classList.remove('darkmode')
-    localStorage.setItem('darkMode', 'null')
-    darkModeToggle.src= './moon.svg'
-    text.innerText = 'Light Mode'
+const disableDarkMode = () => {
+  document.body.classList.remove("darkmode")
+  localStorage.setItem("darkMode", "null")
+  darkModeToggle.src = "./moon.svg"
+  text.innerText = "Light Mode"
 }
-if (darkMode === 'enabled'){
-    enableDarkMode();
+if (darkMode === "enabled") {
+  enableDarkMode()
 }
-toggleIcon.addEventListener('click', ()=>{
-    darkMode = localStorage.getItem('darkMode')
-    //alert('clicked')
-    if(darkMode !== 'enabled'){
-        enableDarkMode();
-        //alert('darkmode')
-    }else{
-        disableDarkMode();
-    }
+toggleIcon.addEventListener("click", () => {
+  darkMode = localStorage.getItem("darkMode")
+  //alert('clicked')
+  if (darkMode !== "enabled") {
+    enableDarkMode()
+    //alert('darkmode')
+  } else {
+    disableDarkMode()
+  }
 })
 
 const showLoader = () => {
@@ -151,11 +151,11 @@ regions.forEach((item) => {
     fetchData(`${regionURL}${continent}`)
   })
 })
-
+let width
 if (document.body.id === "index") {
   let sticky = form.offsetTop
   // let formHeight = form.offsetHeight
-  let width = window.innerWidth
+  // let width = window.innerWidth
   // let bigSticky = control.offsetTop
 
   const stickyFunc = () => {
@@ -167,7 +167,7 @@ if (document.body.id === "index") {
         form.classList.remove("sticky")
         dropDownParent.classList.remove("padding")
       }
-    } else {
+    } else if (width > 769) {
       if (window.pageYOffset > sticky) {
         control.classList.add("sticky")
         parentElement.classList.add("padding")
@@ -183,6 +183,9 @@ if (document.body.id === "index") {
   input.addEventListener("input", onInputValue)
   filterBtn.addEventListener("click", toggleFilter)
   window.addEventListener("scroll", stickyFunc)
+  window.addEventListener("resize", () => {
+    width = window.innerWidth
+  })
 } else if (document.body.id === "detail") {
   const details = document.querySelector(".detail")
   const returnBtn = document.querySelector(".return-btn")
