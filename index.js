@@ -151,11 +151,11 @@ regions.forEach((item) => {
     fetchData(`${regionURL}${continent}`)
   })
 })
-
+let width
 if (document.body.id === "index") {
   let sticky = form.offsetTop
   // let formHeight = form.offsetHeight
-  let width = window.innerWidth
+  // let width = window.innerWidth
   // let bigSticky = control.offsetTop
 
   const stickyFunc = () => {
@@ -167,7 +167,7 @@ if (document.body.id === "index") {
         form.classList.remove("sticky")
         dropDownParent.classList.remove("padding")
       }
-    } else {
+    } else if (width > 769) {
       if (window.pageYOffset > sticky) {
         control.classList.add("sticky")
         parentElement.classList.add("padding")
@@ -183,6 +183,9 @@ if (document.body.id === "index") {
   input.addEventListener("input", onInputValue)
   filterBtn.addEventListener("click", toggleFilter)
   window.addEventListener("scroll", stickyFunc)
+  window.addEventListener("resize", () => {
+    width = window.innerWidth
+  })
 } else if (document.body.id === "detail") {
   const details = document.querySelector(".detail")
   const returnBtn = document.querySelector(".return-btn")
