@@ -76,7 +76,7 @@ img {
   display: block;
 }
 
-.fa-solid{
+.fa-solid {
   color: var(--textcolor);
 }
 .main-content {
@@ -350,33 +350,31 @@ form {
   }
 }
 
-@media screen  and (max-width:385px){
-  .heading{
+@media screen and (max-width: 385px) {
+  .heading {
     padding-left: 10px;
     padding-right: 20px;
     font-size: 1.3rem;
-
-}
-  header{
-      margin-top: 0px;
-      height: 80px;
-      margin-left: 0px;
-      margin-right: -8px;
-      overflow: hidden;
   }
-  .theme{
-      cursor: pointer;
-      margin-right: -20px;
-      
+  header {
+    margin-top: 0px;
+    height: 80px;
+    margin-left: 0px;
+    margin-right: -8px;
+    overflow: hidden;
+  }
+  .theme {
+    cursor: pointer;
+    margin-right: -20px;
   }
 
-  #dark-mode-text{
-      font-weight: 600;
-      padding-right: 40px;
-      font-size: 12px;
+  #dark-mode-text {
+    font-weight: 600;
+    padding-right: 40px;
+    font-size: 12px;
   }
-  #dark-mode-toggle{
-      padding-right: 10px;
-      width: 22px;
+  #dark-mode-toggle {
+    padding-right: 10px;
+    width: 22px;
   }
 }
