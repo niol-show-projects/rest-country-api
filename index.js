@@ -151,7 +151,7 @@ regions.forEach((item) => {
     fetchData(`${regionURL}${continent}`)
   })
 })
-let width
+let width = window.innerWidth
 if (document.body.id === "index") {
   let sticky = form.offsetTop
   // let formHeight = form.offsetHeight
