@@ -117,6 +117,7 @@ input:autofill {
 }
 
 input {
+  color: var(--textcolor);
   margin-left: 1em;
   height: 100%;
   border: none;
@@ -127,6 +128,7 @@ input {
 }
 input:focus {
   outline: none;
+  color: var(--textcolor);
 }
 
 input::placeholder {
@@ -138,7 +140,7 @@ input:autofill {
   font-size: var(--font-size-detail);
   font-weight: var(--font-weight-hard);
   font-family: "Nunito Sans", sans-serif;
-  background-color: var(--textcolor);
+  background-color: var(--elementcolor);
 }
 
 form {
