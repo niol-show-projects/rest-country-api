@@ -162,10 +162,10 @@ if (document.body.id === "index") {
     if (width <= 769) {
       if (window.pageYOffset >= sticky) {
         form.classList.add("sticky")
-        control.classList.add("padding")
+        dropDownParent.classList.add("padding")
       } else {
         form.classList.remove("sticky")
-        control.classList.remove("padding")
+        dropDownParent.classList.remove("padding")
       }
     } else if (width > 769) {
       if (window.pageYOffset > sticky) {
