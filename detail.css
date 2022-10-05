@@ -1,16 +1,14 @@
 :root {
-  --bgcolor:hsl(0, 0%, 98%);
+  --bgcolor: hsl(0, 0%, 98%);
   --elementcolor: hsl(0, 0%, 100%);
-  --textcolor:hsl(200, 15%, 8%);
-  --shadowcolor:#dfdede;
+  --textcolor: hsl(200, 15%, 8%);
+  --shadowcolor: #dfdede;
   --font-weight-light: 300;
   --font-weight-medium: 600;
   --font-weight-hard: 800;
   --font-size-home: 14px;
   --font-size-detail: 16px;
 }
-
-
 
 * {
   padding: 0;
@@ -22,47 +20,51 @@
   display: none;
 }
 
-.darkmode{
-  --bgcolor:hsl(207, 26%, 17%);
+.darkmode {
+  --bgcolor: hsl(207, 26%, 17%);
   --elementcolor: hsl(209, 23%, 22%);
-  --textcolor:hsl(0, 0%, 100%);
-  --shadowcolor:#0e0e0e;
-  
+  --textcolor: hsl(0, 0%, 100%);
+  --shadowcolor: #0e0e0e;
 }
 
-.heading{
-  padding-left: 50px;
+.heading {
+  /* padding-left: 3.125rem; */
   color: var(--textcolor);
-  
+  font-size: 150%;
 }
-header{
+header {
+  width: 100%;
   display: flex;
-  position: sticky;
-  margin-top: 0px;
-  height: 80px;
+  /* position: sticky;
+  margin-top: 0; */
+  height: 5rem;
   background-color: var(--elementcolor);
-  padding: 10px;
-  margin-left: -30px;
-  margin-right: -10px;
+  padding: 0.625rem 5vw;
+  /* margin-left: -1.875rem;
+  margin-right: -0.625rem; */
   align-items: center;
   justify-content: space-between;
   box-shadow: 10px 10px 10px -5px var(--shadowcolor);
 }
-.theme{
+.theme {
   display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 6.2rem;
   align-items: center;
   cursor: pointer;
 }
 
-#dark-mode-text{
+#dark-mode-text {
   font-weight: 600;
-  padding-right: 40px;
+  /* padding-right: 2.5rem; */
   color: var(--textcolor);
+  font-size: var(--font-size-detail);
 }
-#dark-mode-toggle{
-  padding-right: 10px;
-  width: 30px;
- 
+#dark-mode-toggle {
+  /* padding-right: 0.625rem; */
+  width: 1em;
+  font-weight: var(--font-weight-medium);
 }
 button {
   border: none;
@@ -79,7 +81,7 @@ img {
   object-fit: fill;
   display: block;
 }
-.fa-solid{
+.fa-solid {
   color: var(--textcolor);
 }
 /* ########### detail page ########## */
@@ -126,7 +128,6 @@ img {
 .detail-capital,
 .languages {
   margin-bottom: 3rem;
-
 }
 .native-name,
 .detail-pop,
@@ -157,32 +158,45 @@ img {
   text-transform: capitalize;
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  h1{
-    padding-left: 40px;
-    font-size: 15px;
+  .heading {
+    /* padding-left: 3.125rem; */
+    color: var(--textcolor);
+    font-size: 150%;
   }
-  header{
-      margin-top: -8px;
-      height: 70px;
-      margin-left: -25px;
-      margin-right: -8px;
-      overflow: hidden;
+  header {
+    width: 100%;
+    display: flex;
+    /* position: sticky;
+    margin-top: 0; */
+    height: 5rem;
+    background-color: var(--elementcolor);
+    padding: 0.625rem 5vw;
+    /* margin-left: -1.875rem;
+  margin-right: -0.625rem; */
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 10px 10px 10px -5px var(--shadowcolor);
   }
-  .theme{
-      cursor: pointer;
-      margin-right: -20px;
-      
+  .theme {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 6.5rem;
+    align-items: center;
+    cursor: pointer;
   }
 
-  .theme p{
-      font-weight: 600;
-      padding-right: 40px;
-      font-size: 11px;
+  #dark-mode-text {
+    font-weight: 600;
+    /* padding-right: 2.5rem; */
+    color: var(--textcolor);
+    font-size: var(--font-size-detail);
   }
-  .headerImg{
-      padding-right: 10px;
-      width: 22px;
-}
+  #dark-mode-toggle {
+    /* padding-right: 0.625rem; */
+    width: 1em;
+    font-weight: var(--font-weight-medium);
+  }
   .detail {
     display: flex;
     flex-flow: column wrap;
@@ -243,33 +257,44 @@ img {
 }
 @media screen and (min-width: 1025px) {
   /* ########### detail page ########## */
-  .heading{
-    padding-left: 10px;
-    padding-right: 20px;
-    font-size: 1.3rem;
+  .heading {
+    /* padding-left: 3.125rem; */
+    color: var(--textcolor);
+    font-size: 150%;
+  }
+  header {
+    width: 100%;
+    display: flex;
+    /* position: sticky;
+    margin-top: 0; */
+    height: 5rem;
+    background-color: var(--elementcolor);
+    padding: 0.625rem 5vw;
+    /* margin-left: -1.875rem;
+  margin-right: -0.625rem; */
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 10px 10px 10px -5px var(--shadowcolor);
+  }
+  .theme {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 6.5rem;
+    align-items: center;
+    cursor: pointer;
+  }
 
-}
-  header{
-      margin-top: 0px;
-      height: 80px;
-      margin-left: 0px;
-      margin-right: -8px;
-      overflow: hidden;
+  #dark-mode-text {
+    font-weight: 600;
+    /* padding-right: 2.5rem; */
+    color: var(--textcolor);
+    font-size: var(--font-size-detail);
   }
-  .theme{
-      cursor: pointer;
-      margin-right: -20px;
-      
-  }
-
-  #dark-mode-text{
-      font-weight: 600;
-      padding-right: 40px;
-      font-size: 12px;
-  }
-  #dark-mode-toggle{
-      padding-right: 10px;
-      width: 22px;
+  #dark-mode-toggle {
+    /* padding-right: 0.625rem; */
+    width: 1em;
+    font-weight: var(--font-weight-medium);
   }
 
   .detail {
@@ -329,33 +354,31 @@ img {
     width: clamp(30rem, 40vw, 36rem);
   }
 }
-@media screen  and (max-width:385px){
-  .heading{
+@media screen and (max-width: 385px) {
+  .heading {
     padding-left: 10px;
     padding-right: 20px;
     font-size: 1.3rem;
-
-}
-  header{
-      margin-top: 0px;
-      height: 80px;
-      margin-left: 0px;
-      margin-right: -8px;
-      overflow: hidden;
   }
-  .theme{
-      cursor: pointer;
-      margin-right: -20px;
-      
+  header {
+    margin-top: 0px;
+    height: 80px;
+    margin-left: 0px;
+    margin-right: -8px;
+    overflow: hidden;
+  }
+  .theme {
+    cursor: pointer;
+    margin-right: -20px;
   }
 
-  #dark-mode-text{
-      font-weight: 600;
-      padding-right: 40px;
-      font-size: 12px;
+  #dark-mode-text {
+    font-weight: 600;
+    padding-right: 40px;
+    font-size: 12px;
   }
-  #dark-mode-toggle{
-      padding-right: 10px;
-      width: 22px;
+  #dark-mode-toggle {
+    padding-right: 10px;
+    width: 22px;
   }
 }
