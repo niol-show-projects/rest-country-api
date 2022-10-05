@@ -151,21 +151,21 @@ regions.forEach((item) => {
     fetchData(`${regionURL}${continent}`)
   })
 })
-let width = window.innerWidth
 if (document.body.id === "index") {
-  let sticky = form.offsetTop
+  let width = window.innerWidth
+  let sticky = control.offsetTop
   // let formHeight = form.offsetHeight
   // let width = window.innerWidth
-  // let bigSticky = control.offsetTop
+  // let smallSticky = form.offsetTop
 
   const stickyFunc = () => {
     if (width <= 769) {
-      if (window.pageYOffset > sticky) {
+      if (window.pageYOffset >= sticky) {
         form.classList.add("sticky")
-        dropDownParent.classList.add("padding")
+        control.classList.add("padding")
       } else {
         form.classList.remove("sticky")
-        dropDownParent.classList.remove("padding")
+        control.classList.remove("padding")
       }
     } else if (width > 769) {
       if (window.pageYOffset > sticky) {
