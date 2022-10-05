@@ -232,10 +232,11 @@ form {
   height: 10em;
 }
 .padding {
-  padding-top: 4.5rem;
+  padding-top: 3rem;
   /* margin-top: 5.5rem; */
 }
 .controls {
+  padding-top: 1rem;
   width: 100%;
 }
 .sticky {
