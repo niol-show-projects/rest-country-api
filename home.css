@@ -30,7 +30,8 @@
 .heading {
   /* padding-left: 3.125rem; */
   color: var(--textcolor);
-  font-size: 150%;
+  font-size: 120%;
+  font-weight: var(--font-weight-hard);
 }
 header {
   width: 100%;
@@ -50,20 +51,20 @@ header {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  width: 6.2rem;
+  width: 5.5rem;
   align-items: center;
   cursor: pointer;
 }
 
 #dark-mode-text {
-  font-weight: 600;
+  font-weight: var(--font-weight-medium);
   /* padding-right: 2.5rem; */
   color: var(--textcolor);
-  font-size: var(--font-size-detail);
+  font-size: var(--font-size-home);
 }
 #dark-mode-toggle {
   /* padding-right: 0.625rem; */
-  width: 1em;
+  width: var(--font-size-home);
   font-weight: var(--font-weight-medium);
 }
 button {
